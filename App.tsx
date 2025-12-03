@@ -10,6 +10,8 @@ import Pricing from './components/Pricing';
 import { SectionId } from './types';
 import { Check } from 'lucide-react';
 
+import AppShowcase from './components/AppShowcase';
+
 function App() {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-50 selection:bg-brand-500 selection:text-white">
@@ -19,11 +21,10 @@ function App() {
         <Hero />
 
         {/* Trusted By / Stats strip */}
-        <div className="bg-slate-950 border-b border-slate-800 py-10">
+        {/* <div className="bg-slate-950 border-b border-slate-800 py-10">
           <div className="container mx-auto px-6">
             <p className="text-center text-slate-500 text-sm font-medium mb-6 uppercase tracking-wider">Confían en nosotros</p>
             <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              {/* Logo Placeholders */}
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded bg-slate-700 flex items-center justify-center text-white font-bold">C</div>
                 <span className="text-xl font-bold text-slate-300">CASINO <span className="text-brand-500">ROYAL</span></span>
@@ -42,7 +43,9 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <AppShowcase />
 
         <Features />
 
